@@ -17,3 +17,16 @@ The computer memory is organized that way because it is simple to implement. Eve
 * The list goes on ...
 
 ## The CPU
+
+Storing data doesn't do much help for computer to function. We need more than just store, we need to be able to access, manipulate, and move it. This is what CPU do. The CPU reads in instructions from memory one at a time and executes them. This is known as the __fetch-execute cycle__. In order to do that, the CPU contains the following:
+
+* Program Counter:
+  * tell the computer where to fetch the next instruction from
+  * holds the memroy address of the next instruction to be executed
+  * How? The CPU begins by looking at the program counter and fetching whatever number is stored in memory at the location specified which then passed on to the __instruction decoder__
+* Instruction Decoder
+  * figure out the meaning of the instruction passed by program counter.
+  * the instructions include:
+* Data bus
+* General-purpose registers
+* Arithmetic and logic unit
