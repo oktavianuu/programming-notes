@@ -26,7 +26,23 @@ Storing data doesn't do much help for computer to function. We need more than ju
   * How? The CPU begins by looking at the program counter and fetching whatever number is stored in memory at the location specified which then passed on to the __instruction decoder__
 * Instruction Decoder
   * figure out the meaning of the instruction passed by program counter.
-  * the instructions include:
+  * the instructions include for example, what process needs to take place (addition, substraction, multiplication, data movement, etc.) and what memory locations are going to be involved in this process. Computer instructions usually consists of both the actual instruction and the list of memory locations that are used to carry it out.
 * Data bus
+  * fetch memory locations to be used in the calculations. Data bus is the connection between the CPU and memory. It is the actual wire that connects them. If we look out at the motherboard of our computer, the wires that go out from the memory are our data bus. 
 * General-purpose registers
+  * In addition to the memory on the outside of the processor, the processor itself has some special, high-speed memory locations called registers. There are two kinds of registers - general registers and special-purpose registers. General-purpose registers are where the main action happens.
+  * Addition, subtraction, multiplication, comparisions, and other operations generally use general-purpose registers for processing. However, computers have very few general-purpose registers. Most information is stored in main memory, brought in to the registers for processing, and then put back into memory when the processing is completed. special-purpose registers are registers which have very specific purposes. 
 * Arithmetic and logic unit
+  * Now that the CPU has retrieved all of the data it needs, it passes on the data and the decoded instruction to the arithmetic and logic unit for further processing. Here the instruction is actually executed. After the results of the computation have been calculated, the results are then placed on the data bus and sent to the appropriate location in memory or in a register, as specified by the instruction.
+  * This is a very simplified explanation. Processors have advanced quite a bit in recent years, and are now much more complex. Although the basic operation is still the same, it is complicated by the use of cache hierarchies, superscalar processors, pipelining, branch prediction, out-of-order execution, microcode translation, coprocessors, and other optimizations. 
+
+## Interpreting Memory
+Computers can only store numbers, so letters, pictures, music, web pages, documents, and anything else are just long sequences of numbers in the computer, which particular programs know how to interpret.
+
+
+
+
+### Review
+#### Know the Concepts
+1. Describe the fetch-execute cycle!
+__Fetch-execute cycle__ is done by the CPU which involves five elements. First, the CPU begins the __fetch-execution__  by looking at the program counter which hold the information (memory address) of the next instruction to be executed. Then fetching the number stored in the memory at the location specified. It is then passed on to the **instruction decoder** which figure out what the instruction means for example is it substraction, addition and etc. and the memory locations are going to be involved. Then the __data bus__ used by the computer
