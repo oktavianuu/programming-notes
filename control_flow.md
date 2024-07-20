@@ -6,7 +6,7 @@ In programming, making decision is important. It is a mechanism in which the pro
 
 The first and the simplest conditional statement is ``if`` as follow:
 
-```
+```python
 if true_or_not:
 	do_this_if_true
 ```
@@ -23,10 +23,8 @@ if the weather is good, we'll go for walk
 
 then, we'll have lunch
 ```
-
 As we can see above that having lunch is not a conditional activity and doesn't depend on the weather. By knowing what condition affects our behavior, the condition above can be translated as follows:
-
-```
+```python
 if weather_is_good:
 	go_for_a_walk()
 have_lunch()
@@ -37,24 +35,31 @@ have_lunch()
 ### ``if-else`` Statement
 
 The `else` statement allows you to specify an alternative block of code to execute if the `if` condition is false.
-
-```
+```python
 age = 16
 if age >= 18:
     print("You are an adult.")
 else:
     print("You are not an adult.")
 ```
+### A Series of ``if`` Statement
+```python
+x = 10
 
-```
+if x > 5: # condition one
+    print("x is greater than 5")  # Executed if condition one is True.
 
+if x < 10: # condition two
+    print("x is less than 10")  # Executed if condition two is True.
+
+if x == 10: # condition three
+    print("x is equal to 10")  # Executed if condition three is True.
 ```
 
 ### ``if-elif-else`` Statement
 
 The `elif` (short for else if) statement allows us to check multiple conditions.
-
-```
+```python
 age = 16
 if age >= 18:
     print("You are an adult.")
@@ -62,9 +67,23 @@ elif age >= 13:
     print("You are a teenager.")
 else:
     print("You are a child.")
-
 ```
 
-<pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div></div></pre>
-
 ### Nested ``if`` Statement
+```python
+x = 10
+
+if x > 5:  # True
+    if x == 6:  # False
+        print("nested: x == 6")
+    elif x == 10:  # True
+        print("nested: x == 10")
+    else:
+        print("nested: else")
+else:
+    print("else")
+```
+
+
+
+### Analysing Code Examples
